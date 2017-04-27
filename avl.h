@@ -30,4 +30,7 @@ void avl_print_keys(AvlTree t);
 /* delete and return minimum value in a tree */
 int avl_delete_min(AvlTree *t);
 
+/* delete the given value */
+void avl_delete(AvlTree *t, int key);
+
 #endif  // PADDLEPADDLE_SSTABLE_AVL_H_

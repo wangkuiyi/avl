@@ -7,16 +7,9 @@
 #define N (1024)
 #define MULTIPLIER (97)
 
-int
-main(int argc, char **argv)
-{
+int main() {
     AvlTree t = avl_create();
     int i;
-
-    if(argc != 1) {
-        fprintf(stderr, "Usage: %s\n", argv[0]);
-        return 1;
-    }
 
     for(i = 0; i < N; i++) {
         avl_insert(&t, (i*MULTIPLIER) % N);
